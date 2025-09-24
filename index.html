@@ -1,64 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Lucas Silva Soares</title>
- 
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Lucas Silva Soares</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Expositivo Lucas Silva Soares</h1>
-        <nav>
-            <ul>
-                <li><a href="#hero">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <section id="hero">
-        <img src="images/fotolucas.jpg" alt="Foto de Lucas Silva Soares" width="200">
-        <div>
-            <h2>Lucas Silva Soares</h2>
-            <p>Bem-vindo ao meu portfólio! Aqui você vai encontrar informações sobre mim, meus projetos e como entrar em contato.</p>
-        </div>
-    </section>
-
-
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>Sou estudante de programação e desenvolvedor em formação. Tenho interesse em desenvolvimento web, design alternativo e criação de interfaces que misturam criatividade com tecnologia.</p>
-    </section>
-
-    <section id="projetos">
-        <h2>Projetos</h2>
+  <header>
+    <div class="container header-container">
+      <h1>Expositivo Lucas Silva Soares</h1>
+      <nav>
         <ul>
-            <li>Projeto 1 – Site responsivo em HTML e CSS</li>
-            <li>Projeto 2 – Aplicação interativa em JavaScript</li>
-            <li>Projeto 3 – Portfólio pessoal (este site)</li>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu email" required>
-            <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+  <section id="hero">
+    <div class="container hero-container">
+      <img src="images/fotolucas.jpg" alt="Foto de Lucas Silva Soares" width="200">
+      <div class="hero-text">
+        <h2>Lucas Silva Soares</h2>
+        <p>Bem-vindo ao meu portfólio! Aqui você vai encontrar informações sobre mim, meus projetos e como entrar em contato.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Lucas Silva Soares. Todos os direitos reservados.</p>
-        <p><a href="mailto:lucas@email.com">lucas@email.com</a></p>
-    </footer>
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre mim</h2>
+      <p>Sou estudante de programação e desenvolvedor em formação. Tenho interesse em desenvolvimento web, design alternativo e criação de interfaces que misturam criatividade com tecnologia.</p>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="container">
+      <h2>Projetos</h2>
+      <div class="grid-projetos">
+        <article class="card">
+          <h3>Projeto 1</h3>
+          <p>Site responsivo em HTML e CSS.</p>
+        </article>
+        <article class="card">
+          <h3>Projeto 2</h3>
+          <p>Aplicação interativa em JavaScript.</p>
+        </article>
+        <article class="card">
+          <h3>Projeto 3</h3>
+          <p>Portfólio pessoal (este site).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu email" required>
+        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Lucas Silva Soares. Todos os direitos reservados.</p>
+      <p>
+        <a href="mailto:lucas@email.com">lucas@email.com</a> |
+        <a href="https://github.com/seuusuario" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
