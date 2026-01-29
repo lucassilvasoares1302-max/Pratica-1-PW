@@ -201,3 +201,37 @@ footer a:hover {
     gap: 0.7rem;
   }
 }
+/* ==============================
+   EXPERIÊNCIA PROFISSIONAL – AJUSTE LEVE
+================================ */
+
+.experiencia-horizontal {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.experiencia-info {
+  min-width: 220px;
+}
+
+.experiencia-descricao {
+  flex: 1;
+}
+
+.experiencia-descricao ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.experiencia-descricao ul li {
+  margin-bottom: 0.6rem;
+  list-style: disc;
+}
+
+/* Responsivo: só muda EXPERIÊNCIA */
+@media (max-width: 768px) {
+  .experiencia-horizontal {
+    flex-direction: column;
+  }
+}
