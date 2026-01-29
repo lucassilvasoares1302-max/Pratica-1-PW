@@ -226,7 +226,6 @@ footer a:hover {
   list-style: disc;
 }
 
-/* Responsivo: só muda EXPERIÊNCIA */
 @media (max-width: 768px) {
   .experiencia-horizontal {
     flex-direction: column;
