@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -13,13 +11,12 @@ body {
   line-height: 1.6;
 }
 
+
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-
 
 header {
   background: linear-gradient(90deg, #1e2a38, #3b2a50);
@@ -55,8 +52,6 @@ nav a:hover {
   color: #9b59b6;
 }
 
-
-
 #hero {
   background: linear-gradient(135deg, #1e2a38, #2a1f3d);
   padding: 4rem 0;
@@ -87,8 +82,6 @@ nav a:hover {
   color: #4a90e2;
 }
 
-
-
 section {
   padding: 4rem 0;
 }
@@ -109,8 +102,6 @@ section p {
   max-width: 800px;
   margin-bottom: 1rem;
 }
-
-
 
 .grid-projetos {
   display: grid;
@@ -135,55 +126,6 @@ section p {
   margin-bottom: 0.5rem;
   color: #4a90e2;
 }
-
-
-
-#experiencias {
-  padding: 4rem 0;
-}
-
-.experiencia-horizontal {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-}
-
-.experiencia-info {
-  min-width: 220px;
-}
-
-.experiencia-info h3 {
-  color: #4a90e2;
-}
-
-.experiencia-info .cargo {
-  display: block;
-  font-weight: 600;
-  margin-top: 0.3rem;
-}
-
-.experiencia-info .periodo {
-  display: block;
-  font-size: 0.85rem;
-  color: #bbb;
-  margin-bottom: 1rem;
-}
-
-.experiencia-descricao {
-  flex: 1;
-}
-
-.experiencia-descricao ul {
-  margin-top: 1rem;
-  padding-left: 1.2rem;
-}
-
-.experiencia-descricao ul li {
-  margin-bottom: 0.6rem;
-  list-style: disc;
-}
-
 
 
 form {
@@ -225,8 +167,6 @@ button:hover {
   background: #9b59b6;
 }
 
-
-
 footer {
   background: #1e2a38;
   color: #bbb;
@@ -245,9 +185,50 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
-
 @media (max-width: 768px) {
-
   .hero-container {
-    flex-direction: co
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+
+.experiencia-horizontal {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.experiencia-info {
+  min-width: 220px;
+}
+
+.experiencia-descricao {
+  flex: 1;
+}
+
+.experiencia-descricao ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.experiencia-descricao ul li {
+  margin-bottom: 0.6rem;
+  list-style: disc;
+}
+
+/* Responsivo: só muda EXPERIÊNCIA */
+@media (max-width: 768px) {
+  .experiencia-horizontal {
+    flex-direction: column;
+  }
+}
